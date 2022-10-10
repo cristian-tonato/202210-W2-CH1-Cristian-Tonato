@@ -123,7 +123,7 @@ function askAction() {
 //admin
 
 function doAdmin() {
-    const askAdmin = askAction('CREAR');
+    const askAdmin = askAction();
     if (askAdmin === 'CREAR') {
         const newFlight = {};
         newFlight.toFlight = prompt('Introduzca origen de su vuelo');
