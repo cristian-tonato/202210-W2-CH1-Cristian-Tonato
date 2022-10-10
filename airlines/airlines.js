@@ -36,7 +36,7 @@ function askName() {
         alert(`✈️🌍✈️Bienvenido ${nameAnswer} a ISDI AIRLINES ✈️🌍✈️`);
     }
 }
-//askName();
+
 let infoScale;
 function infoFlights() {
     flights.forEach((flight) => {
@@ -48,7 +48,7 @@ function infoFlights() {
         }
     });
 }
-//infoFlights();
+
 function averageCost() {
     let averagePrice = [];
     let average = 0;
@@ -64,7 +64,7 @@ function averageCost() {
         ).toFixed(2)}€💸💸`
     );
 }
-//averageCost();
+
 function flightScale() {
     let flightsScale = 0;
     flights.forEach((flight) => {
@@ -87,7 +87,7 @@ function infoLast() {
         }`
     );
 }
-//infoLast();
+
 function askRole() {
     const role = prompt('¿Eres user/ admin?');
     if (role === null) {
@@ -101,7 +101,7 @@ function askRole() {
         return role.toLowerCase();
     }
 }
-//askRole();
+
 function askAction() {
     const action = prompt('¿Qué quieres hacer? (CREAR/ELIMINAR)');
     if (action != null) {
@@ -118,7 +118,7 @@ function askAction() {
         return action;
     }
 }
-//askAction();
+
 
 //admin
 
@@ -144,7 +144,7 @@ function doAdmin() {
     }
     createDelete();
 }
-//doAdmin();
+
 
 function createDelete() {
     let newAction = prompt('¿Le gustaria volver a CREAR/ELIMINAR?(si/no)');
@@ -160,7 +160,7 @@ function createDelete() {
         console.log('adios');
     }
 }
-//createDelete();
+
 
 // opciones usuario
 
@@ -182,7 +182,7 @@ function doUser() {
     }
     userBuyFlight();
 }
-//doUser();
+
 
 function userBuyFlight() {
     let userFlight = prompt('Introduce ID que desea comprar');
@@ -200,7 +200,7 @@ function userBuyFlight() {
     }
     newPurchase();
 }
-//userBuyFlight();
+
 
 function newPurchase() {
     let buyOneMore = prompt('¿Desea comprar otro vuelo?(si/no)');
@@ -213,7 +213,7 @@ function newPurchase() {
         console.log('ADIOS');
     }
 }
-//BuyOneMore();
+
 
 function ailinesPro() {
     askName();
