@@ -166,7 +166,7 @@ function createDelete() {
 
 function doUser() {
     let userPrice = prompt('Introduzca el precio para buscar su vuelo');
-    if (userPrice !== isNaN) {
+    if (userPrice != isNaN) {
         for (let i = 0; i < flights.length; i++) {
             if (flights[i].cost <= userPrice) {
                 let flightPrice = `ID: ${flights[i].id}, Vuelo origen ${flights[i].from} con destino ${flights[i].to}, tiene un precio de ${flights[i].cost}`;
@@ -205,7 +205,8 @@ function userBuyFlight() {
 function newPurchase() {
     let buyOneMore = prompt('¿Desea comprar otro vuelo?(si/no)');
     if (buyOneMore === 'si') {
-        for (let i = 0; i < buyOneMore.length; i++) return userBuyFlight();
+        for (let i = 0; i < buyOneMore.length; i++) 
+        return userBuyFlight();
     } else if (buyOneMore == null || 'no' || '') {
         alert('Gracias! Hasta pronto');
         return undefined;
